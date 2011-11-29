@@ -7,7 +7,7 @@
 
 <p>
   Resque Scheduler PID exist?
-  <% if File.exist?(Dir::pwd + '/tmp/pids/resque_scheduler.pid') %>
+  <% if File.exist?(Rails.root.to_s + '/tmp/pids/resque_scheduler.pid') %>
     True
   <% else %>
     False
